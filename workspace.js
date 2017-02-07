@@ -1466,7 +1466,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
             // WebRTC Client com-chilipeppr-webrtcclient
             chilipeppr.load(
                 "com-chilipeppr-webrtcclient",
-                "http://fiddle.jshell.net/chilipeppr/qWj4f/show/light/",
+                "http://fiddle.jshell.net/lordmundi/jrrhjnak/show/light/",
 
                 function() {
                     cprequire(
