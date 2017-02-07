@@ -1496,6 +1496,23 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                             //$('.com-chilipeppr-widget-serialport-status').removeClass("hidden");
                         });
                 });
+                
+            chilipeppr.load(
+              "com-chilipeppr-webcam",
+              "http://raw.githubusercontent.com/chilipeppr/widget-cam/master/auto-generated-widget.html",
+              function() {
+                // Callback after widget loaded into #myDivWidgetCam
+                // Now use require.js to get reference to instantiated widget
+                cprequire(
+                  ["inline:com-chilipeppr-widget-cam"], // the id you gave your widget
+                  function(myObjWidgetCam) {
+                    // Callback that is passed reference to the newly loaded widget
+                    console.log("Widget / Cam just got loaded.", myObjWidgetCam);
+                    myObjWidgetCam.init();
+                  }
+                );
+              }
+            );
 
 
 
